@@ -815,7 +815,7 @@
 // var fruits = ["apple", "banana", "mango", "orange", "strawberry"]
 // for (var i = 0; i < fruits.length; i++) {
 //     document.write(fruits[i] + "<br>");
-    
+
 
 // }
 // document.write("<br>");
@@ -1598,37 +1598,150 @@
 //Task # 5
 // var text = prompt('Please write something');
 // var char = prompt('Write character to find its index');
-// {
-//     function indexNo() {
+
+//     function indexNo(text , char) {
 //         for (var i = 0; i < text.length; i++){
 //         if (text[i] === char) {
-//             var a = 1;
+//             return i;
 //         }
-//         if(a=1){
-//             alert(char + ' is at index ' +i + ' in your string');
 
-//         }
-//         else{
-//             break;
-//         }
 //     }}
-// }
-// indexNo();
+// alert('Your required letter is at ' +indexNo(text , char) + 'index')
+
 
 //Task # 6
-// var sentence = prompt('Enter anyting');
-// function replace(){
-//     for(var i =0 ; i<sentence.length;i++){
-//         if(sentence[i] ==='a' || sentence[i] ==='o'||sentence[i] ==='e'||sentence[i] ==='i'||sentence[i] ==='u'){
-//             sentence[i] = " "
-//         }
-//     }
-//     alert(sentence)
+// string = prompt("Enter a sentence,\nI will delete vowels from it.");
+// function voweldelete(x){
+//     var a = "";
+//     let words = x.split("")
+//     for (i of words){
+//         if (!i.match("a|e|i|o|u|A|E|I|O|U")){
+//             a=a+i    }}
+//     return a;}
+// alert('Your sentence after removing vowels is : \n'+voweldelete(string))
+
+//Task # 7
+// if character ch is a vowel 
+// function isVowel(ch) {
+//     switch (ch) {
+//         case 'a':
+//         case 'A':
+//         case 'e':
+//         case 'E':
+//         case 'i':
+//         case 'I':
+//         case 'o':
+//         case 'O':
+//         case 'u':
+//         case 'U':
+
+//             return true;
+//         default:
+//             return false;    }}
+
+// // Function to return the count of adjacent 
+// // vowel pairs in the given string 
+// function vowelPairs(s, n){
+//     var count = 0;
+//     for (var i = 0; i < n-1; i++){
+//         // If current character and the 
+//         // character after it are both vowels 
+//         if (isVowel(s[i]) && isVowel(s[i+1])){
+//             list.push(s[i]+s[i+1])
+//             count++;        }    }   
+//     return count;}
+    
+// function printlist(list) {
+//     document.write("The pairs of vowels are: " )
+//     for (i of list){
+//         document.write(i+", ")    }}
+// // Driver code 
+// var list = []
+// function main(){
+//     var s = prompt("Enter a sentence to check for joint vowels\n it will alert number of occurances")
+//     // var s = "Please read this application and give me gratuity";
+//     var n = s.length;
+//     // pairs = list.join();
+//     document.write("The occurences of vowels are: ",vowelPairs(s, n),"<br>");
+//     printlist(list)} 
+// main()
+
+//  Task8
+// var dis = prompt("Enter distance in kilimeter");
+// function distanceFeet(dis) {
+//     var ft = dis * 3280.8;
+//     var feet =  Math.round(ft);
+//     return (feet);
+// }
+// function distanceMeter(dis) {
+//     var meter = dis * 1000;
+//     var meter =  Math.round(meter);
+//     return (meter);
 // }
 
-// replace();
+// function distanceInches(dis) {
+//     var inch = dis * 39370;
+//     var inche =  Math.round(inch);
+//     return (inche);
+// }
+
+// function distanceCentimeter(dis) {
+//     cm = dis * 100000
+//     var cmeter = Math.round(cm);
+//     return (cmeter);
+// }
+// document.write("Convert distance from kilometer throught feet " + distanceFeet(dis) + " ft" + "<br>");
+// document.write("Convert distance from kilometer throught feet " + distanceMeter(dis) + " m" + "<br>");
+// document.write("Convert distance from kilometer throught inch " + distanceInches(dis) + " inch" + "<BR>");
+// document.write("Convert distance from kilometer throught centimeter " + distanceCentimeter(dis) + " cm" + "<BR>");
+
+//Task # 9
+// var hours= prompt('Enter your work hours');
+// hours = parseInt(hours);
+
+// var overPay;
+// if (hours > 40){
+//     var extraHours = hours - 40;
+//      overPay = extraHours*12;
+//      alert('Your work hours are '+ hours +'\nYou have worked ' + extraHours +' hours over \nYour overtime salary is : ' +overPay)
+// }
+// else{
+//     alert("You did not work above 40")
+// }
 
 
+// Task#10
+
+// var remaining;
+// var total = +prompt("Enter Rupees you want to change in notes: ");
+// fiveth     = Math.floor(total / 5000); 
+// remaining  = total % 5000;
+// oneth      = Math.floor(remaining / 1000);
+// remaining  = remaining % 1000;
+// fivehund   = Math.floor(remaining / 500);
+// remaining  = remaining % 500;
+// onehund    = Math.floor(remaining / 100);
+// remaining  = remaining % 100;
+// fifty      = Math.floor(remaining / 50);
+// remaining  = remaining % 50;
+// twenty     = Math.floor(remaining / 20);
+// remaining  = remaining % 20;
+// ten        = Math.floor(remaining / 10);
+// remaining  = remaining % 10;
+// five       = Math.floor(remaining / 5);
+// remaining  = remaining % 5;
+// two        = Math.floor(remaining / 2);
+// one        = remaining % 2;
+// document.write("Note/s of Five Thousand is/are: " +fiveth+"<br>")
+// document.write("Note/s of One Thousand is/are: "  +oneth+"<br>")
+// document.write("Note/s of Five Hundred is/are: "  +fivehund+"<br>")
+// document.write("Note/s of One Hundred is/are: "   +onehund+"<br>")
+// document.write("Note/s of Fifty is/are: "         +fifty+"<br>")
+// document.write("Note/s of Twenty is/are: "        +twenty+"<br>")
+// document.write("Note/Coin/s of Ten is/are: "      +ten+"<br>")
+// document.write("Coin/s of Five is/are: "          +five+"<br>")
+// document.write("Coin/s of Two is/are: "           +two+"<br>")
+// document.write("And Coin of One is: "             +one)
 
 
 
@@ -1639,13 +1752,13 @@
 //Task # 4 is in html file
 
 //Task # 3
-function del(r){
-   var i = r.parentNode.parentNode.rowIndex;
-    document.getElementById('delBtn').deleteRow(i);
-}
-function edit(r){
+// function del(r){
+//    var i = r.parentNode.parentNode.rowIndex;
+//     document.getElementById('delBtn').deleteRow(i);
+// }
+// function edit(r){
 
-}
+// }
 
 //Task # 5
 // var count = 0;
@@ -1661,13 +1774,11 @@ function edit(r){
 
 //Chapter # 49-52
 //Task # 1
-// function submit() {
+// function submit1() {
 //     var fn = document.getElementById('fName').value;
 //     var ln = document.getElementById('lName').value;
 //     var mail = document.getElementById('mail').value;
 //     var password = document.getElementById('password').value;
-//     var formShow = document.getElementById('displayAgain');
-//     console.log(formShow);
 //     var head = '<h1>Congratulations..! You have successfully signed up</h1><br>';
 //     document.write(head);
 //     var record = 'Your First Name ' + fn + ' Your Last Name ' + ln + 'Your Email Address is ' + mail + ' <br>Your password is :' + password
@@ -1688,3 +1799,102 @@ function edit(r){
 // }
 
 //Task # 3
+
+
+//Chapter 53-58
+//Task # 1
+// function showImage(e){
+//     var modalImage=document.getElementById('modalImage');
+//     modalImage.src = e.src;
+// }
+
+
+// function zoomIn(){
+//     var a = document.getElementById('pera');
+//     a.className= "zoomIn";
+// }
+// function zoomOut(){
+//     var a = document.getElementById('pera');
+//     a.className= "zoomOut";
+// }
+
+
+//Chapter # 59-67
+//Task # 1 (i)
+// var main = document.getElementById('main-content');
+
+//Task # 1 (ii)
+// var main = document.getElementById('main-content');
+// var child = main.childNodes;
+// console.log(child)
+
+//Task # 1 (iii)
+// var content = document.getElementsByClassName('render').innerHTML;
+// document.write(content)
+// document.write(content.item(i).innerHTML);
+
+// var x = document.getElementsById("main-content");
+// var rend = x.ge
+// for (i = 0; i < 5; i++) {
+// document.write(x.item(0).innerHTML);
+// }
+// 
+
+// document.write(x.length)
+
+//Task # 1 (iv)
+// var input = document.getElementById('first-name');
+// input.value = 'Mubeen'
+
+// Task # 1 (v)
+// var lName = document.getElementById('last-name');
+// lName.value = "Abdul-Majeed"
+// var lName = document.getElementById('email');
+// lName.value = "hmubeenm@gmail.com"
+
+
+//Task # 2 (i)
+// var findType = document.getElementById('form-content');
+// alert(findType.nodeType);
+
+//Task # 2 (ii)
+// var type = document.getElementById('lastName');
+// alert(type.nodeType);
+// var child = type.childNodes;
+// alert(child.nodeType)
+
+
+//Task # 2 (iii)
+// var update = document.getElementById('last-name');
+// update.innerHTML = 'Mubeen'
+// console.log(update);
+
+//Task # 2 (iv)
+// var first = document.getElementById('main-content');
+// console.log(first.firstChild);
+// console.log(first.lastChild);
+
+//Task # 2 (v)
+// var first = document.getElementById('lastName');
+// console.log(first.nextSibling);
+// console.log(first.previousSibling);
+
+//Task # 2(vi)
+// var first = document.getElementById('email');
+// console.log(first.parentNode);
+// alert(first.nodeType)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

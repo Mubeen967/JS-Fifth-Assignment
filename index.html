@@ -6,26 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <!-- <p id="text">Lorem ipsum dolor sit amet consecteturDoloribus maxime blanditiis amet
-        eveniet nam, qui quo eum. Voluptatibus
-        molestiae itaque, qui hic assumenda nihil
-        consequatur corporis iste consequuntur doloribus modi.
-    </p> -->
-    <!-- <p id="pera">
-        Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit.
-        
-        <a href="#javascript:void(0)" onclick="readMore()"> <button>Read More</button> </a>
-       
-    </p> -->
+   
+   
 
     <!-- Chapter # 43-48 -->
 
     <!-- Task #1 -->
-    <!-- <a href="JavaScript:void(0)" onclick="alert('hi')">Click</a> -->
+    <!-- <a href="#" onclick="alert('hi')">Click</a> -->
 
     <!-- Task #2
     <div class="container">
@@ -49,8 +41,6 @@
 
         </div>
     </div> -->
-
-
 
     <!-- Task # 3 -->
     <!-- <table id ="delBtn">
@@ -106,9 +96,9 @@
 
 
     <!-- Chapter # 49-52 -->
+    <!-- Task # 1 -->
     <!-- <h1 id="head">Submission Form</h1>
     <form action="#" id="form">
-        <p id = "displayAgain">  </p>
             <label >First Name</label>
             <input type="text" id="fName">
             <label for="">Last Name</label>
@@ -117,13 +107,29 @@
             <input type="email" id="mail">
             <label for="">Password:</label>
             <input type="password" id="password">
-            <button type="submit" onclick="submit()">Sign Up</button>
+            <button type="submit" onclick="submit1()">Sign Up</button>
 
       
     </form> -->
 
 
 
+
+
+
+    
+    <!-- Task # 2 -->
+     <!-- <p id="pera">
+        Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit.
+        
+        <a href="#javascript:void(0)" onclick="readMore()"> <button>Read More</button> </a>
+       
+    </p> -->
+    <!-- Task # 3 -->
+
+
+    <!-- 
      <table id ="delBtn">
         <tr>
             <th>Index</th>
@@ -161,12 +167,102 @@
             <td><button  onclick="edit(this)">Edit   </button></td>
         
         </tr>
-    </table>
+    </table> -->
+
+    <!-- Chapter # 53-58 -->
+    <!-- Task # 1 -->
+
+    <!-- Modal -->
+    <!-- <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-3 col-sm-6 p-3">
+                <img  onclick="showImage(this)" src="images/pic1.jpg" alt=""  data-toggle="modal" data-target="#exampleModal">
+            </div>
+            <div class="col-md-3 col-sm-6 p-3">
+                <img  onclick="showImage(this)" src="images/pic2.jpg" alt=""  data-toggle="modal" data-target="#exampleModal">
+            </div>
+            <div class="col-md-3 col-sm-6 p-3">
+                <img   onclick="showImage(this)" src="images/pic3.jpg" alt=""  data-toggle="modal" data-target="#exampleModal">
+            </div>
+            <div class="col-md-3 col-sm-6 p-3 ">
+                <img   onclick="showImage(this)" src="images/ic4.jpg" alt=""  data-toggle="modal" data-target="#exampleModal">
+            </div>
+        </div>
+
+
+    </div>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="" class="bigImage" alt="" id = "modalImage">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Task # 2
+    <p id="pera" class="font">
+        Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Voluptate quidem minima 
+        odio vel nostrum eius praesentium harum, hic, deserunt alias natus 
+        ad eveniet eos dolore, quos laboriosam ipsa
+         vero autem!
+    </p>
+    <button onclick="zoomIn()">Zoom In</button>
+    <button onclick="zoomOut()">Zoom Out</button> -->
+<!-- 
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content"><p class="render"> First Name : Alex</p><p class="render" id="lastName">Last Name: Bank</p><p class="rendera"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p></div>
+      
+    </div>
+  
+
+  -->
+
+
+
+
+
+
+
+
 
 
 
 
 </body>
 <script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script
 
 </html>

@@ -1,0 +1,19 @@
+img{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+.bigImage{
+    width: 450px;
+    height: 400px;
+
+}
+.font{
+    font-size: 15px;
+}
+.zoomIn{
+    font-size: 25px;
+}
+.zoomOut{
+    font-size: 15px;
+}
